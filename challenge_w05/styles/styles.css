@@ -1,0 +1,28 @@
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+#desk-img,
+#graphic-img,
+#person-img {
+    width: 11%;
+    margin: 0 110px;
+    border: 10px solid #414141;
+    border-radius: 50%;
+}
+
+div {
+    width: 70%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: gray;
+    margin: 0 auto;
+}
