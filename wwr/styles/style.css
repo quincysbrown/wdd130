@@ -241,7 +241,63 @@ footer .social img {
     color: #00b4d8;
     font-family: "Permanent Marker", Tahoma, 'Arial Black';
     display: grid;
-    grid-template-columns: REPEAT(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+}
+
+/*Rivers page styles*/
+#rivers-header-text {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+#rivers-header-text h1 {
+    color: #00b4d8;
+    font-family: "Permanent Marker", Tahoma, 'Arial Black';
+}
+
+#rivers-header-text h3 {
+    color: #6c757d;
+    font-family: "Kalam", Helvetica, sans-serif;
+}
+
+.rivers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+.rivers section {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    gap: 15px;
+    grid-column: 1 / -1;
+}
+
+.rivers section h2,
+.rivers section p {
+    margin-left: 50px;
+    text-align: left;
+    grid-column: 1 / span 2;
+}
+
+.rivers section img {
+    grid-column: 3;
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.rivers section h2 {
+    color: #00b4d8;
+    font-family: "Permanent Marker", Tahoma, 'Arial Black';
+}
+
+.rivers section p {
+    color: #6c757d;
+    font-family: "Kalam", Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 900px) {
