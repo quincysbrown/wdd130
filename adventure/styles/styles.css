@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Shrikhand&display=swap');
+
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+    font-family: "Shrikhand", Tahoma, 'Arial Black';
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: Repeat(2, 1fr);
+    justify-content: space-between;
+    width: 90%;
+    /* Keeps it responsive */
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    /* Ensures it stacks on small screens */
+}
+
+/* Left Side: Text Section */
+#hero-msg {
+    width: 90%;
+    /* Takes up half the screen */
+    text-align: center;
+    order: 1;
+
+}
+
+#hero-msg h1 {
+    font-family: "Shrikhand", Tahoma, 'Arial Black';
+    font-size: 3rem;
+    /* Big font */
+    font-weight: bold;
+    color: #20060B;
+    /* Adjust based on your color scheme */
+}
+
+#hero-msg h4 {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: "IM Fel Great Primer", Helvetica, sans-serif;
+}
+
+/* Right Side: Image */
+#hero-box {
+    padding-top: 70px;
+    width: 100%;
+    order: 2;
+}
+
+#hero-img {
+    width: 111%;
+}
+
+header {
+    background-color: #A2161F;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #72B3C5;
+    color: #20060B;
+}
+
+.logo {
+    width: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.hiking-container,
+.backpacking-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+/* Alternating Layout */
+.hiking-container {
+    background-color: #72B3C5;
+    padding: 100px;
+    /* Image Left, Text Right */
+}
+
+.backpacking-container {
+    flex-direction: row-reverse;
+    padding: 50px;
+    /* Image Right, Text Left */
+}
+
+/* Image Styling */
+.hiking-img,
+.backpacking-img {
+    width: 60%;
+    max-width: 550px;
+    position: relative;
+    z-index: 1;
+
+}
+
+/* Text Box Styling */
+.hiking-overview,
+.backpacking-overview {
+    width: 60%;
+    padding: 20px;
+    /* Semi-transparent overlay */
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 2;
+}
+
+.hiking-overview {
+    position: absolute;
+    right: -10%;
+    transform: translateX(-50%);
+    max-width: 40%;
+    background-color: #A2161F;
+}
+
+.hiking-img {
+    left: -27%;
+    border-radius: 10px;
+}
+
+.hiking-overview h2 {
+    font-family: "Shrikhand", Tahoma, 'Arial Black';
+}
+
+.hiking-overview p {
+    font-family: "IM Fel Great Primer", Helvetica, sans-serif;
+}
+
+.backpacking-overview {
+    position: absolute;
+    left: 7%;
+    max-width: 40%;
+    background-color: #68121B;
+
+}
+
+.backpacking-img {
+    right: -25%;
+    border: 30px solid #FCB332;
+}
+
+.backpacking-overview h2 {
+    font-family: "Shrikhand", Tahoma, 'Arial Black';
+}
+
+.backpacking-overview p {
+    font-family: "IM Fel Great Primer", Helvetica, sans-serif;
+}
+
+/* Learn More Buttons */
+.learn-hiking,
+.learn-backpacking {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.learn-hiking:hover,
+.learn-backpacking:hover {
+    background-color: #cc5500;
+}
+
+.footer-line {
+    border-color: #72B3C5;
+    border-width: 3px;
+}
+
+footer {
+    background-color: white;
+    color: #20060B;
+
+    padding: 25px 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-family: "Shrikhand", Tahoma, 'Arial Black';
+}
+
+footer a {
+    color: #72B3C5;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: "IM Fel Great Primer", Helvetica, sans-serif;
+}
+
+footer a:hover {
+    color: #00509d;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
