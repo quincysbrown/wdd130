@@ -12,7 +12,7 @@ nav a {
 
 #hero {
     display: grid;
-    grid-template-columns: Repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     width: 90%;
     /* Keeps it responsive */
