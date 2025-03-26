@@ -233,7 +233,7 @@ footer p a:hover {
 #intro-hiking h1 {
     position: relative;
     display: inline-block;
-    font-size: 2.5em;
+    font-size: 2.4em;
     margin-bottom: 20px;
     font-family: "Shrikhand", Tahoma, 'Arial Black';
 }
@@ -241,7 +241,7 @@ footer p a:hover {
 #intro-backpacking h1 {
     position: relative;
     display: inline-block;
-    font-size: 2.5em;
+    font-size: 2.4em;
     margin-bottom: 20px;
     font-family: "Shrikhand", Tahoma, 'Arial Black';
 }
@@ -249,12 +249,12 @@ footer p a:hover {
 #intro-box p,
 .info-dump p,
 .info-dump ul {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-family: "IM Fel Great Primer", Helvetica, sans-serif;
 }
 
 .info-dump h2 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     font-family: "Shrikhand", Tahoma, 'Arial Black';
 }
 
