@@ -230,14 +230,103 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-.why-container {
-    display: flex;
+#intro-hiking h1 {
     position: relative;
-    flex-direction: row;
+    display: inline-block;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Shrikhand", Tahoma, 'Arial Black';
+}
+
+#intro-backpacking h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Shrikhand", Tahoma, 'Arial Black';
+}
+
+#intro-box p,
+.info-dump p,
+.info-dump ul {
+    font-size: 1.4em;
+    font-family: "IM Fel Great Primer", Helvetica, sans-serif;
+}
+
+.info-dump h2 {
+    font-size: 2.5em;
+    font-family: "Shrikhand", Tahoma, 'Arial Black';
+}
+
+#intro-hiking h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    /* Adjust to move the rectangle down */
+    width: 190px;
+    /* Adjust width of the rectangle */
+    height: 15px;
+    /* Adjust thickness of the rectangle */
+    background-color: #FCB332;
+    /* Adjust to match your color scheme */
+    border-radius: 3px;
+}
+
+#intro-backpacking h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    /* Adjust to move the rectangle down */
+    width: 400px;
+    /* Adjust width of the rectangle */
+    height: 15px;
+    /* Adjust thickness of the rectangle */
+    background-color: #FCB332;
+    /* Adjust to match your color scheme */
+    border-radius: 3px;
+}
+
+.gear-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1000px;
-    margin: 40px auto;
-    overflow: hidden;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.gear-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.why-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #72B3C5;
+    padding: 60px;
+    gap: 40px;
+}
+
+.why-msg {
+    background-color: #A2161F;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    justify-self: start;
+}
+
+.image-box {
+    justify-self: end;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 8px;
 }
